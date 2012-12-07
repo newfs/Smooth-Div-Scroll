@@ -1074,6 +1074,9 @@
 
 				// Start interval
 				el.data("autoScrollingInterval", setInterval(function () {
+					// Check for showing hot spots continuously during
+					// auto-scrolling.
+					self._showHideHotSpots();
 
 					// If the scroller is not visible or
 					// if the scrollable area is shorter than the scroll wrapper
